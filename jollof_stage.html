@@ -7,10 +7,12 @@
 	
 	<div id = "game_background">
 
-		<a href="jollof_stage.html" id="hut"></a>
-		<a href="game_over.html" id="run_home"></a>
+		<a href="game_over.html" id="option1"></a>
+		<a href="game_over.html" id="option2"></a>
+		<a href="stool_stage.html" id="option3"></a>
 
-		<p id='game_status'>Should Muna enter the <a href="jollof_stage.html">HUT</a> or run back <a href="game_over.html">HOME</a>?</p>
+		<p id='game_status'>What Plate of Jollof Rice should Muna choose <a href="game_over.html">Plate 1</a>, <a href="game_over.html">Plate 2 </a> or <a href="stool_stage.html">Plate 3</a>?</p>
+
 	</div>
 
 	
@@ -40,7 +42,7 @@
 		}
 
 		#game_background {
-			background: url("index.jpg") no-repeat;
+			background: url("jollof_rice_stage.png") no-repeat;
 			height: 480px ;
 			width: 720px;
 
@@ -74,33 +76,45 @@
 		}
 
 
-		#hut {
+		#option1 {
 			
 			position: absolute;
-			left: 20px
+			left: 25px;
 			top: 20px;
 
-			width: 250px;
+			width: 200px;
 			height: 200px;
 		}
 
-		#hut:hover {
+		#option1:hover {
 			background-color: rgba(256,256,256,.5);
 		}
 
-		#run_home {
+		#option2 {
 			position: absolute;
-			left: 370px;
+			left: 255px;
 			top: 20px;
 
-			width: 250px;
+			width: 200px;
 			height: 200px
 		}
 
-		#run_home:hover {
+		#option2:hover {
 			background-color: rgba(256,256,256,.5);
 		}
-		
+
+		#option3 {
+			position: absolute;
+			left: 480px;
+			top: 20px;
+
+			width: 200px;
+			height: 200px
+		}
+
+		#option3:hover {
+			background-color: rgba(256,256,256,.5);
+		}
 		
 
 	</style>
