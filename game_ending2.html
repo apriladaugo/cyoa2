@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CYOA</title>
+</head>
+<body>
+
+	<section id = "game_background">
+		<h3>The End</h3>
+			<div class="set">
+				<div><img src="leave1.png"></div>
+				<div><img src="leave2.png"></div>
+				<div><img src="leave3.png"></div>
+				<div><img src="leave4.png"></div>
+				<div><img src="leave5.png"></div>
+				<div><img src="leave6.png"></div>
+				<div><img src="leave7.png"></div>
+			</div>
+
+			<div class="set set2">
+				<div><img src="leave1.png"></div>
+				<div><img src="leave2.png"></div>
+				<div><img src="leave3.png"></div>
+				<div><img src="leave4.png"></div>
+				<div><img src="leave5.png"></div>
+				<div><img src="leave6.png"></div>
+				<div><img src="leave7.png"></div>
+			</div>
+
+				<div class="set set3">
+				<div><img src="leave1.png"></div>
+				<div><img src="leave2.png"></div>
+				<div><img src="leave3.png"></div>
+				<div><img src="leave4.png"></div>
+				<div><img src="leave5.png"></div>
+				<div><img src="leave6.png"></div>
+				<div><img src="leave7.png"></div>
+			</div>
+
+		<p><a href="start_game.html">Play again?</a></p>
+	</section>
+
+	
+
+	
+	<style type="text/css">
+
+		html {
+			--webkit-background-size: contain;
+			--moz-background-size: contain;
+			-o-background-size: contain;
+		}
+
+		body {
+			font-size: 20px;
+			background-color: white;
+			color: grey;
+			font-family: Tahoma;
+
+			min-height: auto;
+    		max-width: auto;
+    		background-color: papayawhip; 
+    		margin: 0 auto;
+		}
+
+		h3 {
+			font-family: Papyrus;
+			font-size: 40px;
+		}
+
+		a {
+
+			color: white;
+		}
+
+		a:hover {
+
+			text-decoration: underline;
+		}
+
+	
+		section {
+			position: relative;
+			width: 100%
+			height:	100vh;
+			background: url("index.jpg") no-repeat center center;
+			background-size: contain;
+			height: 480px ;
+			width: auto;
+			/*overflow: hidden;*/
+			justisfy-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		section h3 {
+			color: white;
+			text-transform: uppercase;
+			position: relative;
+			top: 100px;
+		}
+
+		section a {
+			position: relative;
+			top: 210px;
+	
+			padding: 10px 10px 10px 10px;
+
+			background-color: rgba(0,0,0,.5);
+			width: 300px;
+			text-align: center;
+			color: white;
+
+		}
+
+		section .set {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+
+		}
+
+
+		section .set div {
+			position: absolute;
+			display: block; 
+		}
+
+		section .set img {
+			width: 20%;
+			height: 20%;
+		}
+
+		section .set div:nth-child(1)
+		{
+			left: 20%;
+			animation: animate 15s linear infinite;
+			animation-delay: -7s;
+		}
+
+		section .set div:nth-child(2)
+		{
+			left: 50%;
+			animation: animate 20s linear infinite;
+			animation-delay: -5s;
+		}
+
+		section .set div:nth-child(3)
+		{
+			left: 70%;
+			animation: animate 20s linear infinite;
+			animation-delay: 0s;
+		}
+
+
+		section .set div:nth-child(4)
+		{
+			left:0%;
+			animation: animate 15s linear infinite;
+			animation-delay: -5s;
+		}
+
+		section .set div:nth-child(5)
+		{
+			left:85%;
+			animation: animate 18s linear infinite;
+			animation-delay: -10s;
+		}
+
+		section .set div:nth-child(6)
+		{
+			left:0%;
+			animation: animate 12s linear infinite;
+		}
+
+		section .set div:nth-child(7)
+		{
+			left:15%;
+			animation: animate 14s linear infinite;
+		}
+
+
+		@keyframes animate {
+			0%
+			{
+				opacity: 0;
+				top: -10%;
+				transform: translateX(20px) rotate(0deg);
+			}
+			10%
+			{
+				opacity: 1;
+			}
+			20%
+			{
+				transform: translateX(-20px) rotate(45deg);
+			}
+			40%
+			{
+				transform: translateX(-20px) rotate(90deg);
+			}
+			60%
+			{
+				transform: translateX(20px) rotate(180deg);
+			}
+			80%
+			{
+				transform: translateX(-20px) rotate(180deg);
+			}
+			100%
+			{
+				top: 110%;
+				transform: translateX(-20px) rotate(225deg);
+			}
+		}
+		
+		.set2 {
+			transform: scale(2) rotateY(180deg);
+			filter: blur(2px);
+		}
+
+		.set3 {
+			transform: scale(0.8) rotate(180deg);
+			filter: blur(4px);
+		}
+
+	</style>
+</body>
+</html>
