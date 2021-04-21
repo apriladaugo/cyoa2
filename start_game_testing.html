@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CYOA</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- 	<ab href="jollof_stage.html" id="hut"></a>
+		<a href="game_over.html" id="run_home"></a> -->
+        <div>
+            Stage1: <input id="hutStageInput">
+        </div>
+        <button onclick="playGame()">Continue</button>
+
+        <!-- <p id='game_statuss'>Should Muna enter the <a href="jollof_stage.html">HUT</a> or run back <a href="game_over.html">HOME</a>?</p> -->
+
+        <!-- <form id="theAdventure">
+            <p></p>
+            <fieldset></fieldset>
+            <label>Muna finds a strange hut in the forest. <br>Type "enter" to go in or; <br> Type "home" to head back home</label> <br>
+            <div>
+                <input id="hutStageInput">
+            </div>
+            <button onclick="playGame()">Continue</button>
+            <a id="restartButton" class="reset">  Restart</a>
+        </form> -->
+    </div>
+
+
+    <style type="text/css">
+        /*body {
+			font-size: 20px;
+			background-color: white;
+			color: grey;
+			font-family: Tahoma;
+		}*/
+        
+        h1 {
+            font-family: Papyrus;
+            font-size: 40px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        /*a {
+			color: white;
+		}
+
+		a:hover {
+
+			text-decoration: underline;
+		}*/
+        
+        #game_background {
+            background: url("index.jpg") no-repeat;
+            height: 480px;
+            width: 720px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #game_background>h1 {
+            color: white;
+            position: absolute;
+            left: 80px;
+        }
+        
+        #game_background>p {}
+        
+        #game_status {
+            position: absolute;
+            top: 310px;
+            left: 30px padding: 15px 15px 15px 15px;
+            background-color: rgba(0, 0, 0, .5);
+            width: 500px;
+            text-align: center;
+            color: white;
+            left: 120px;
+        }
+        
+        #hut {
+            position: absolute;
+            left: 20px top: 20px;
+            width: 250px;
+            height: 200px;
+        }
+        
+        #hut:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+        
+        #run_home {
+            position: absolute;
+            left: 370px;
+            top: 20px;
+            width: 250px;
+            height: 200px
+        }
+        
+        #run_home:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+    </style>
+
+    <script>
+        // function for game logic
+        var playGame = function() {
+            // Game Logic
+            var hutStageInput = document.getElementById('hutStageInput').value;
+
+            alert(hutStageInput);
+            // document.body.style.backgroundColor = hutStageInput;
+            if (hutStageInput = "enter") {
+                alert("Muna is entering the hut...");
+                window.top.location = 'jollof_stage.html';
+                // window.location.replace("http://www.w3schools.com");
+            } else {
+                alert("The hut looks scary, Muna is heading back home...");
+                window.top.location = 'start_game.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

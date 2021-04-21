@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>CYOA</title>
+    <title>CYOA</title>
 </head>
+
 <body>
-	
-	<div id = "game_background">
 
-		<a href="#" id="option1"></a>
-		<a href="#" id="option2"></a>
-		<a href="ending_stage.html" id="option3"></a>
+    <div id="game_background">
 
-		<p id='game_status'>Which bed should Muna sleep in after his plate of jollof <a href="#">Bed 1</a>, <a href="#">Bed 2 </a> or <a href="ending_stage.html">Bed 3</a>?</p>
+        <p id='game_status'>Muna finds three stools close to the table. Which bed should Muna sleep in after his plate of jollof ? <br>
+            <a onclick="bed1()" id="bed1Btn" class="button">Bed 1</a>
+            <a onclick="bed2()" id="bed2Btn" class="button">Bed 2</a>
+            <a onclick="bed3()" id="bed3Btn" class="button">Bed 3</a>
+        </p>
 
-	</div>
-
-	
-	<style type="text/css">
-
-		body {
-			font-size: 20px;
-			background-color: white;
-			color: grey;
-			font-family: Tahoma;
-		}
-
-		h1 {
-			font-family: Papyrus;
-			font-size: 40px;
-			padding: 0 0 0 0;
-			margin: 0 0 0 0;
-		}
-
-		a {
-			color: white;
-		}
-
-		a:hover {
-
-			text-decoration: underline;
-		}
-
-		#game_background {
-			background: url("bed.png") no-repeat;
-			height: 480px ;
-			width: 720px;
-
-			position: absolute;
-			top: 20px;
-			left:20px;
-		}
-
-		#game_background > h1 {
-			color: white;
-			position: absolute;
-			left: 80px;
-
-		}
-
-		#game_background > p {
-			
-		}
-
-		#game_status {
-			position: absolute;
-			top: 310px;
-			left: 30px
-			padding: 15px 15px 15px 15px;
-
-			background-color: rgba(0,0,0,.5);
-			width: 500px;
-			text-align: center;
-			color: white;
-			left: 120px;
-		}
+    </div>
 
 
-		#option1 {
-			
-			position: absolute;
-			left: 25px;
-			top: 20px;
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            background-color: white;
+            color: grey;
+            font-family: Tahoma;
+        }
+        
+        h1 {
+            font-family: Papyrus;
+            font-size: 40px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            width: 75px;
+            background: #d2d2d2;
+            text-align: center;
+            /* float: left; */
+            color: #000;
+            line-height: 32px;
+            text-decoration: none;
+        }
+        
+        .button: hover {
+            width: 75px;
+            background: #0e567f;
+            color: #fff;
+            text-align: center;
+            /* float: center; */
+            line-height: 32px;
+            text-decoration: none;
+        }
+        
+        #bed1Btn {
+            float: left;
+        }
+        
+        #bed2Btn {
+            float: center;
+        }
+        
+        #bed3Btn {
+            float: right;
+        }
+        
+        #game_background {
+            background: url("bed.png") no-repeat;
+            height: 480px;
+            width: 720px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #game_background>h1 {
+            color: white;
+            position: absolute;
+            left: 80px;
+        }
+        
+        #game_background>p {}
+        
+        #game_status {
+            position: absolute;
+            top: 310px;
+            left: 30px padding: 15px 15px 15px 15px;
+            background-color: rgba(0, 0, 0, .5);
+            width: 500px;
+            text-align: center;
+            color: white;
+            left: 120px;
+        }
+        
+        #option1 {
+            position: absolute;
+            left: 25px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        #option1:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+        
+        #option2 {
+            position: absolute;
+            left: 255px;
+            top: 20px;
+            width: 200px;
+            height: 200px
+        }
+        
+        #option2:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+        
+        #option3 {
+            position: absolute;
+            left: 480px;
+            top: 20px;
+            width: 200px;
+            height: 200px
+        }
+        
+        #option3:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+    </style>
 
-			width: 200px;
-			height: 200px;
-		}
+    <script>
+        var bed3 = function() {
+            alert('This bed is perfect......right choice');
+            window.top.location = "game_ending.html"
+        }
 
-		#option1:hover {
-			background-color: rgba(256,256,256,.5);
-		}
+        var bed1 = function() {
+            alert('Oh Oh......Muna chose the first bed..... too hard');
+            window.top.location = "game_over2.html"
+        }
 
-		#option2 {
-			position: absolute;
-			left: 255px;
-			top: 20px;
-
-			width: 200px;
-			height: 200px
-		}
-
-		#option2:hover {
-			background-color: rgba(256,256,256,.5);
-		}
-
-		#option3 {
-			position: absolute;
-			left: 480px;
-			top: 20px;
-
-			width: 200px;
-			height: 200px
-		}
-
-		#option3:hover {
-			background-color: rgba(256,256,256,.5);
-		}
-		
-	
-	</style>
+        var bed2 = function() {
+            alert('Oh Oh......Muna chose the second bed..... too soft');
+            window.top.location = "game_over2.html"
+        }
+    </script>
 </body>
+
 </html>

@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>CYOA</title>
+    <title>CYOA</title>
 </head>
+
 <body>
-	
-	<div id = "game_background">
 
-		<a href="game_over.html" id="option1"></a>
-		<a href="game_over.html" id="option2"></a>
-		<a href="stool_stage.html" id="option3"></a>
+    <div id="game_background">
 
-		<p id='game_status'>What Plate of Jollof Rice should Muna choose <a href="game_over.html">Plate 1</a>, <a href="game_over.html">Plate 2 </a> or <a href="stool_stage.html">Plate 3</a>?</p>
+        <p id='game_status'>Muna finds three plates of Jollof Rice on the table. Which plate of jollof rice should Muna choose? <br>
+            <a onclick="plate1()" id="plate1Btn" class="button">Plate 1</a>
+            <a onclick="plate2()" id="plate2Btn" class="button">Plate 2</a>
+            <a onclick="plate3()" id="plate3Btn" class="button">Plate 3</a>
+        </p>
 
-	</div>
-
-	
-	<style type="text/css">
-
-		body {
-			font-size: 20px;
-			background-color: white;
-			color: grey;
-			font-family: Tahoma;
-		}
-
-		h1 {
-			font-family: Papyrus;
-			font-size: 40px;
-			padding: 0 0 0 0;
-			margin: 0 0 0 0;
-		}
-
-		a {
-			color: white;
-		}
-
-		a:hover {
-
-			text-decoration: underline;
-		}
-
-		#game_background {
-			background: url("jollof_rice_stage.png") no-repeat;
-			height: 480px ;
-			width: 720px;
-
-			position: absolute;
-			top: 20px;
-			left:20px;
-		}
-
-		#game_background > h1 {
-			color: white;
-			position: absolute;
-			left: 80px;
-
-		}
-
-		#game_background > p {
-			
-		}
-
-		#game_status {
-			position: absolute;
-			top: 310px;
-			left: 30px
-			padding: 15px 15px 15px 15px;
-
-			background-color: rgba(0,0,0,.5);
-			width: 500px;
-			text-align: center;
-			color: white;
-			left: 120px;
-		}
+    </div>
 
 
-		#option1 {
-			
-			position: absolute;
-			left: 25px;
-			top: 20px;
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            background-color: white;
+            color: grey;
+            font-family: Tahoma;
+        }
+        
+        h1 {
+            font-family: Papyrus;
+            font-size: 40px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            width: 75px;
+            background: #d2d2d2;
+            text-align: center;
+            /* float: left; */
+            color: #000;
+            line-height: 32px;
+            text-decoration: none;
+        }
+        
+        .button: hover {
+            width: 75px;
+            background: #0e567f;
+            color: #fff;
+            text-align: center;
+            /* float: center; */
+            line-height: 32px;
+            text-decoration: none;
+        }
+        
+        #plate1Btn {
+            float: left;
+        }
+        
+        #plate2Btn {
+            float: center;
+        }
+        
+        #plate3Btn {
+            float: right;
+        }
+        
+        #game_background {
+            background: url("jollof_rice_stage.png") no-repeat;
+            height: 480px;
+            width: 720px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #game_background>h1 {
+            color: white;
+            position: absolute;
+            left: 80px;
+        }
+        
+        #game_background>p {}
+        
+        #game_status {
+            position: absolute;
+            top: 310px;
+            left: 30px padding: 15px 15px 15px 15px;
+            background-color: rgba(0, 0, 0, .5);
+            width: 500px;
+            text-align: center;
+            color: white;
+            left: 120px;
+        }
+        
+        #option1 {
+            position: absolute;
+            left: 25px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        #option1:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+        
+        #option2 {
+            position: absolute;
+            left: 255px;
+            top: 20px;
+            width: 200px;
+            height: 200px
+        }
+        
+        #option2:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+        
+        #option3 {
+            position: absolute;
+            left: 480px;
+            top: 20px;
+            width: 200px;
+            height: 200px
+        }
+        
+        #option3:hover {
+            background-color: rgba(256, 256, 256, .5);
+        }
+    </style>
 
-			width: 200px;
-			height: 200px;
-		}
+    <script>
+        var plate3 = function() {
+            alert('This is delicious......right choice');
+            window.top.location = "stool_stage.html"
+        }
 
-		#option1:hover {
-			background-color: rgba(256,256,256,.5);
-		}
+        var plate1 = function() {
+            alert('Oh Oh......Muna chose Plate 1..... too spicy');
+            window.top.location = "game_over2.html"
+        }
 
-		#option2 {
-			position: absolute;
-			left: 255px;
-			top: 20px;
-
-			width: 200px;
-			height: 200px
-		}
-
-		#option2:hover {
-			background-color: rgba(256,256,256,.5);
-		}
-
-		#option3 {
-			position: absolute;
-			left: 480px;
-			top: 20px;
-
-			width: 200px;
-			height: 200px
-		}
-
-		#option3:hover {
-			background-color: rgba(256,256,256,.5);
-		}
-		
-
-	</style>
+        var plate2 = function() {
+            alert('Oh Oh......Muna chose Plate 2..... not spicy at all');
+            window.top.location = "game_over2.html"
+        }
+    </script>
 </body>
+
 </html>
