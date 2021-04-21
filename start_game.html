@@ -7,29 +7,52 @@
 
 <body>
 
-    <div id="game_background">
 
-        <p id='game_status'>Muna finds a hut in the forrest. Should He enter the hut or head back home?
-            <a onclick="jollof_stage()" id="hutBtn" class="button">HUT</a>
-            <a onclick="home()" id="homeBtn" class="button">HOME</a>
-        </p>
 
-    </div>
+    <section>
+        <div id="wrapper">
+            <p id='game_status'>Muna finds a hut in the forrest. Should He enter the hut or head back home? <br><br>
+                <a onclick="jollof_stage()" id="hutBtn" class="button">HUT</a>
+                <a onclick="home()" id="homeBtn" class="button">HOME</a>
+            </p>
+        </div>
+    </section>
 
 
     <style type="text/css">
+        html {
+            --webkit-background-size: contain;
+            --moz-background-size: contain;
+            -o-background-size: contain;
+        }
+        
         body {
             font-size: 20px;
             background-color: white;
-            color: grey;
+            color: white;
             font-family: Tahoma;
+            min-height: auto;
+            max-width: auto;
+            background-color: papayawhip;
+            margin: 0 auto;
+        }
+        
+        #wrapper {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 480px;
+            display: flex;
         }
         
         h1 {
             font-family: Papyrus;
-            font-size: 40px;
-            padding: 0 0 0 0;
-            margin: 0 0 0 0;
+            font-size: 50px;
+        }
+        
+        h3 {
+            font-family: Papyrus;
+            font-size: 30px;
         }
         
         a {
@@ -40,11 +63,30 @@
             text-decoration: underline;
         }
         
+        section {
+            position: relative;
+            width: 100%;
+            background: url("index.jpg") no-repeat center center;
+            background-size: contain;
+            height: 480px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        section a,
+        p {
+            top: 210px;
+            padding: 10px 10px 10px 10px;
+            background-color: rgba(0, 0, 0, .5);
+            width: 500px;
+            text-align: center;
+            color: white;
+        }
+        
         .button {
             width: 75px;
             background: #d2d2d2;
             text-align: center;
-            /* float: left; */
             color: #000;
             line-height: 32px;
             text-decoration: none;
@@ -55,7 +97,6 @@
             background: #0e567f;
             color: #fff;
             text-align: center;
-            /* float: center; */
             line-height: 32px;
             text-decoration: none;
         }
@@ -66,34 +107,6 @@
         
         #homeBtn {
             float: right;
-        }
-        
-        #game_background {
-            background: url("index.jpg") no-repeat;
-            height: 480px;
-            width: 720px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        
-        #game_background>h1 {
-            color: white;
-            position: absolute;
-            left: 80px;
-        }
-        
-        #game_background>p {}
-        
-        #game_status {
-            position: absolute;
-            top: 310px;
-            left: 30px padding: 15px 15px 15px 15px;
-            background-color: rgba(0, 0, 0, .5);
-            width: 500px;
-            text-align: center;
-            color: white;
-            left: 120px;
         }
         
         #hut {

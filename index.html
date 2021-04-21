@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>CYOA</title>
+    <title>CYOA</title>
 </head>
+
 <body>
-	
-	<div id = "game_background">
-		<h1>Muna and the Honey Badgers</h1>
 
-		<p><a href="start_game.html">Start Game</a></p>
-	</div>
+    <!-- Navigation -->
+    <section id="game_background">
 
-	
+        <h1>Muna</h1>
+        <h3>& the Honey Badgers</h3>
 
-	
-	<style type="text/css">
+        <p><a href="start_game.html">Start Game</a></p>
+    </section>
 
-		body {
-			font-size: 20px;
-			background-color: white;
-			color: grey;
-			font-family: Tahoma;
-		}
-
-		h1 {
-			font-family: Papyrus;
-			font-size: 40px;
-			padding: 0 0 0 0;
-			margin: 0 0 0 0;
-		}
-
-		a {
-
-			color: white;
-		}
-
-		a:hover {
-
-			text-decoration: underline;
-		}
-
-		#game_background {
-			background: url("index.jpg") no-repeat;
-			height: 480px ;
-			width: 720px;
-
-			position: absolute;
-			top: 20px;
-			left:20px;
-		}
-
-		#game_background > h1 {
-			color: white;
-			position: absolute;
-			left: 80px;
-
-		}
-
-		#game_background > p {
-			position: absolute;
-			top: 310px;
-			left: 30px
-			padding: 15px 15px 15px 15px;
-
-			background-color: rgba(0,0,0,.5);
-			width: 300px;
-			text-align: center;
-			color: white;
-			left: 220px;
-
-		}
-
-		
-		#game_status {
-			position: absolute;
-			top: 310px;
-			left: 30px
-			padding: 15px 15px 15px 15px;
-
-			background-color: rgba(0,0,0,.5);
-			width: 500px;
-			text-align: center;
-			color: white;
-			left: 120px;
-		}
-		
-		
-
-	</style>
+    <!-- CSS Code -->
+    <style>
+        html {
+            --webkit-background-size: contain;
+            --moz-background-size: contain;
+            -o-background-size: contain;
+        }
+        
+        body {
+            font-size: 20px;
+            background-color: white;
+            color: white;
+            font-family: Tahoma;
+            min-height: auto;
+            max-width: auto;
+            background-color: papayawhip;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: Papyrus;
+            font-size: 50px;
+        }
+        
+        h3 {
+            font-family: Papyrus;
+            font-size: 30px;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            position: relative;
+            width: 100% height: 100vh;
+            background: url("index.jpg") no-repeat center center;
+            background-size: contain;
+            height: 480px;
+            width: auto;
+            /*overflow: hidden;*/
+            justisfy-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        section h1,
+        h3 {
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+            top: 60px;
+        }
+        
+        section a {
+            position: relative;
+            top: 210px;
+            padding: 10px 10px 10px 10px;
+            background-color: rgba(0, 0, 0, .5);
+            width: 300px;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </body>
+
 </html>
