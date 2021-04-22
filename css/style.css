@@ -7,14 +7,12 @@ html {
 
 body {
     font-size: 20px;
-    background-color: white;
-    color: #191414;
+    color: #3F6844;
     min-height: auto;
     max-width: auto;
     background-color: papayawhip;
     margin: 0 auto;
     font: 1.2rem 'Fira Sans', sans-serif;
-    papayawhip
 }
 
 .container {

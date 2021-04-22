@@ -85,7 +85,7 @@ a:hover {
 section {
     position: relative;
     width: 100%;
-    background: url("../images/index.jpg") no-repeat center center;
+    background: url("../images/index.png") no-repeat center center;
     background-size: contain;
     height: 480px;
     width: auto;
