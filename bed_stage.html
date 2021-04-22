@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>CYOA</title>
-</head>
+<title>CYOA by Kelechi Ikwuegbu</title>
+<link rel="stylesheet" href="bed_stage.css">
 
 <body>
 
@@ -18,116 +16,11 @@
     </section>
 
 
-    <style type="text/css">
-        html {
-            --webkit-background-size: contain;
-            --moz-background-size: contain;
-            -o-background-size: contain;
-        }
-        
-        body {
-            font-size: 20px;
-            background-color: white;
-            color: white;
-            font-family: Tahoma;
-            min-height: auto;
-            max-width: auto;
-            background-color: papayawhip;
-            /* margin: 0 auto; */
-        }
-        
-        #wrapper {
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            height: 480px;
-            display: flex;
-        }
-        
-        h1 {
-            font-family: Papyrus;
-            font-size: 50px;
-        }
-        
-        h3 {
-            font-family: Papyrus;
-            font-size: 30px;
-        }
-        
-        a {
-            color: white;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        section {
-            position: relative;
-            width: 100%;
-            background: url("bed.png") no-repeat center center;
-            background-size: contain;
-            height: 480px;
-            align-items: center;
-            text-align: center;
-        }
-        
-        section a,
-        p {
-            top: 210px;
-            padding: 10px 10px 10px 10px;
-            background-color: rgba(0, 0, 0, .5);
-            width: 500px;
-            text-align: center;
-            color: white;
-        }
-        
-        .button {
-            width: 75px;
-            background: #d2d2d2;
-            text-align: center;
-            color: #000;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        .button: hover {
-            width: 75px;
-            background: #0e567f;
-            color: #fff;
-            text-align: center;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        #bed1Btn {
-            float: left;
-        }
-        
-        #bed2Btn {
-            float: center;
-        }
-        
-        #bed3Btn {
-            float: right;
-        }
+    <style>
+
     </style>
 
-    <script>
-        var bed3 = function() {
-            alert('This bed is perfect......right choice');
-            window.top.location = "game_ending.html"
-        }
-
-        var bed1 = function() {
-            alert('Oh Oh......Muna chose the first bed..... too hard');
-            window.top.location = "game_over2.html"
-        }
-
-        var bed2 = function() {
-            alert('Oh Oh......Muna chose the second bed..... too soft');
-            window.top.location = "game_over2.html"
-        }
+    <script src="bed_stage.js">
     </script>
 </body>
 

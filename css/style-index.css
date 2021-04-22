@@ -1,0 +1,145 @@
+html {
+    --webkit-background-size: contain;
+    --moz-background-size: contain;
+    -o-background-size: contain;
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 1024px;
+}
+
+body {
+    font-size: 20px;
+    background-color: white;
+    color: #191414;
+    font-family: Tahoma;
+    min-height: auto;
+    max-width: auto;
+    background-color: papayawhip;
+    margin: 0 auto;
+}
+
+h1 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Papyrus';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Papyrus';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background: url("/images/index-header.png") no-repeat center center;
+    background-size: contain;
+    height: 110px;
+    align-items: center;
+    text-align: center;
+}
+
+header.h1 {
+    color: white;
+}
+
+main {
+    background-color: green;
+    height: 100px;
+    width: 1024px;
+}
+
+footer {
+    background-color: rgb(29, 36, 18);
+    height: 60px;
+    width: 1024px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container p {
+    text-align: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    background: url("../images/index.jpg") no-repeat center center;
+    background-size: contain;
+    height: 480px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+}
+
+section h1,
+h3 {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 60px;
+}
+
+section h4 {
+    color: #191414;
+    text-transform: uppercase;
+    /* position: relative; */
+    top: 60px;
+}
+
+section a {
+    position: relative;
+    top: 210px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+section p {
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+}
+
+.responsiveImage {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Full Width below 768 pixels */
+
+@media only screen and (max-width: 768px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    [class*='grid_'] {
+        width: 100%;
+    }
+}

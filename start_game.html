@@ -2,12 +2,11 @@
 <html>
 
 <head>
-    <title>CYOA</title>
+    <title>CYOA by Kelechi Ikwuegbu</title>
+    <link rel="stylesheet" href="./css/start_game.css">
 </head>
 
 <body>
-
-
 
     <section>
         <div id="wrapper">
@@ -20,129 +19,10 @@
 
 
     <style type="text/css">
-        html {
-            --webkit-background-size: contain;
-            --moz-background-size: contain;
-            -o-background-size: contain;
-        }
-        
-        body {
-            font-size: 20px;
-            background-color: white;
-            color: white;
-            font-family: Tahoma;
-            min-height: auto;
-            max-width: auto;
-            background-color: papayawhip;
-            margin: 0 auto;
-        }
-        
-        #wrapper {
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            height: 480px;
-            display: flex;
-        }
-        
-        h1 {
-            font-family: Papyrus;
-            font-size: 50px;
-        }
-        
-        h3 {
-            font-family: Papyrus;
-            font-size: 30px;
-        }
-        
-        a {
-            color: white;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        section {
-            position: relative;
-            width: 100%;
-            background: url("index.jpg") no-repeat center center;
-            background-size: contain;
-            height: 480px;
-            align-items: center;
-            text-align: center;
-        }
-        
-        section a,
-        p {
-            top: 210px;
-            padding: 10px 10px 10px 10px;
-            background-color: rgba(0, 0, 0, .5);
-            width: 500px;
-            text-align: center;
-            color: white;
-        }
-        
-        .button {
-            width: 75px;
-            background: #d2d2d2;
-            text-align: center;
-            color: #000;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        .button: hover {
-            width: 75px;
-            background: #0e567f;
-            color: #fff;
-            text-align: center;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        #hutBtn {
-            float: left;
-        }
-        
-        #homeBtn {
-            float: right;
-        }
-        
-        #hut {
-            position: absolute;
-            left: 20px top: 20px;
-            width: 250px;
-            height: 200px;
-        }
-        
-        #hut:hover {
-            background-color: rgba(256, 256, 256, .5);
-        }
-        
-        #run_home {
-            position: absolute;
-            left: 370px;
-            top: 20px;
-            width: 250px;
-            height: 200px
-        }
-        
-        #run_home:hover {
-            background-color: rgba(256, 256, 256, .5);
-        }
+
     </style>
 
-    <script>
-        var jollof_stage = function() {
-            alert('Muna is entering the hut.........');
-            window.top.location = "jollof_stage.html"
-        }
-
-        var home = function() {
-            alert('Muna has chosen to head back home.......goodbye');
-            window.top.location = "game_over2.html"
-        }
+    <script src="./js/start_game.js">
     </script>
 </body>
 

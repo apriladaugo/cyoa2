@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>CYOA</title>
+    <title>CYOA by Kelechi Ikwuegbu</title>
+    <link rel="stylesheet" href="./css/stool_stage.css">
 </head>
 
 <body>
@@ -18,179 +19,11 @@
     </section>
 
 
-    <style type="text/css">
-        html {
-            --webkit-background-size: contain;
-            --moz-background-size: contain;
-            -o-background-size: contain;
-        }
-        
-        body {
-            font-size: 20px;
-            background-color: white;
-            color: white;
-            font-family: Tahoma;
-            min-height: auto;
-            max-width: auto;
-            background-color: papayawhip;
-            margin: 0 auto;
-        }
-        
-        #wrapper {
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            height: 480px;
-            display: flex;
-        }
-        
-        h1 {
-            font-family: Papyrus;
-            font-size: 50px;
-        }
-        
-        h3 {
-            font-family: Papyrus;
-            font-size: 30px;
-        }
-        
-        a {
-            color: white;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        section {
-            position: relative;
-            width: 100%;
-            background: url("jollof_rice_stage.png") no-repeat center center;
-            background-size: contain;
-            height: 480px;
-            align-items: center;
-            text-align: center;
-        }
-        
-        section a,
-        p {
-            /* top: 210px; */
-            padding: 10px 10px 10px 10px;
-            background-color: rgba(0, 0, 0, .5);
-            width: 500px;
-            text-align: center;
-            color: white;
-        }
-        
-        .button {
-            width: 75px;
-            background: #d2d2d2;
-            text-align: center;
-            color: #000;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        .button: hover {
-            width: 75px;
-            background: #0e567f;
-            color: #fff;
-            text-align: center;
-            line-height: 32px;
-            text-decoration: none;
-        }
-        
-        #stool1Btn {
-            float: left;
-        }
-        
-        #stool2Btn {
-            float: center;
-        }
-        
-        #stool3Btn {
-            float: right;
-        }
-        /* #game_backgrounds {
-            background: url("stool.png") no-repeat;
-            height: 480px;
-            width: 720px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        
-        #game_background>h1 {
-            color: white;
-            position: absolute;
-            left: 80px;
-        }
-        
-        #game_background>p {}
-        
-        #game_status {
-            position: absolute;
-            top: 310px;
-            left: 30px padding: 15px 15px 15px 15px;
-            background-color: rgba(0, 0, 0, .5);
-            width: 500px;
-            text-align: center;
-            color: white;
-            left: 120px;
-        } */
-        
-        #option1 {
-            position: absolute;
-            left: 25px;
-            top: 20px;
-            width: 200px;
-            height: 200px;
-        }
-        
-        #option1:hover {
-            background-color: rgba(256, 256, 256, .5);
-        }
-        
-        #option2 {
-            position: absolute;
-            left: 255px;
-            top: 20px;
-            width: 200px;
-            height: 200px
-        }
-        
-        #option2:hover {
-            background-color: rgba(256, 256, 256, .5);
-        }
-        
-        #option3 {
-            position: absolute;
-            left: 480px;
-            top: 20px;
-            width: 200px;
-            height: 200px
-        }
-        
-        #option3:hover {
-            background-color: rgba(256, 256, 256, .5);
-        }
+    <style>
+
     </style>
 
-    <script>
-        var stool3 = function() {
-            alert('This stool is perfect......right choice');
-            window.top.location = "bed_stage.html"
-        }
-
-        var stool1 = function() {
-            alert('Oh Oh......Muna chose Stool 1..... too high');
-            window.top.location = "game_over2.html"
-        }
-
-        var plate2 = function() {
-            alert('Oh Oh......Muna chose Stool 2..... too high');
-            window.top.location = "game_over2.html"
-        }
+    <script src="./js/stool_stage.js">
     </script>
 </body>
 
