@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!-- container class  -->
     <div class="container">
         <!-- navigation  -->
         <nav class="navbar">
@@ -17,25 +18,35 @@
                 <a href="story.html">Story</a>
                 <a href="instructions.html">Instructions</a>
                 <a href="license.html" class="right">License</a>
+                <a href="https://github.com/apriladaugo" class="right">Contact</a>
             </div>
         </nav>
 
         <!-- Navigation -->
+
+        <!-- main content section  -->
         <section>
 
             <h1>Muna</h1>
             <h3>& the Honey Badgers</h3>
 
             <p><a href="start_game.html">Start Game</a></p>
-        </section>
 
+        </section>
+        <button onclick="sound_on()">Sound On</button><button onclick="sound_stop()">Sound Off</button>
+        <!-- footer section  -->
         <footer>
             <hr />
             <p><strong>Designed by Kelechi Ikwuegbu.</strong> Copyright (C) 2021. All rights reserved.</p>
         </footer>
 
+        <!-- add audio sound -->
+        <audio src="./sound/Happy-African-Village.mp3" id="game_audio" loop="loop" autoplay="autoplay"></audio>
+
     </div>
 
+    <script src="./js/sound.js">
+    </script>
 </body>
 
 </html>

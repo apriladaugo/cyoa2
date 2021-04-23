@@ -8,9 +8,11 @@
 
 <body>
 
-
+    <!-- main content section  -->
     <section>
+
         <h3>The End</h3>
+        <!-- game_background id control the game background  -->
         <div class="set">
             <div><img src="./images/leave1.png"></div>
             <div><img src="./images/leave2.png"></div>
@@ -20,7 +22,7 @@
             <div><img src="./images/leave6.png"></div>
             <div><img src="./images/leave7.png"></div>
         </div>
-
+        <!-- div class set2 for animation movement and rotation  -->
         <div class="set set2">
             <div><img src="./images/leave1.png"></div>
             <div><img src="./images/leave2.png"></div>
@@ -40,8 +42,11 @@
             <div><img src="./images/leave6.png"></div>
             <div><img src="./images/leave7.png"></div>
         </div>
-
+        <!-- link to restart game  -->
         <p><a href="start_game.html">Play again?</a></p>
+
+        <!-- play sound  -->
+        <audio src="./sound/Happy-African-Village.mp3" id="game_audio" loop="loop" autoplay="autoplay"></audio>
     </section>
 
 
@@ -50,6 +55,19 @@
     <style>
 
     </style>
+
+    <script>
+        // play sound 
+        var sound = new Audio("./sound/game_over.mp3");
+        var sound_on = function() {
+            sound.play();
+        }
+
+        // pause sound 
+        var sound_stop = function() {
+            sound.pause();
+        }
+    </script>
 </body>
 
 </html>

@@ -7,9 +7,11 @@
 </head>
 
 <body>
-
+    <!-- main content section  -->
+    <!-- game_background id control the game background  -->
     <section id="game_background">
         <h3>Game Over</h3>
+        <!-- div class set containing the css animation  -->
         <div class="set">
             <div><img src="./images/game_over1.png"></div>
             <div><img src="./images/game_over2.png"></div>
@@ -17,7 +19,7 @@
             <div><img src="./images/game_over4.png"></div>
 
         </div>
-
+        <!-- div class set2 for animation movement and rotation  -->
         <div class="set set2">
             <div><img src="./images/game_over1.png"></div>
             <div><img src="./images/game_over2.png"></div>
@@ -25,7 +27,7 @@
             <div><img src="./images/game_over4.png"></div>
 
         </div>
-
+        <!-- div class set3 contain blured animation  -->
         <div class="set set3">
             <div><img src="./images/game_over1.png"></div>
             <div><img src="./images/game_over2.png"></div>
@@ -33,8 +35,11 @@
             <div><img src="./images/game_over4.png"></div>
 
         </div>
-
+        <!-- link to play again or quit  -->
         <p><a href="start_game.html" class="button">Play Again?</a> or <a href="index.html" class="button">Quit</a></p>
+
+        <!-- play sound  -->
+        <audio src="./sound/game-over.mp3" id="game_audio" loop="loop" autoplay="autoplay"></audio>
     </section>
 
 
